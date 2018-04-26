@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+/*----------------*/
+/*  ナビゲーション  */
+/*----------------*/
+
 nav ul{
     margin: 0;
     padding: 0;
@@ -10,13 +14,54 @@ nav ul{
 
 nav li {
     display: flex;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
     width: 100%;
-    text-align: center;
+    align-items: center;
+	justify-content: center;
     border-bottom: solid 1px black;
     background: skyblue;
+    height: 40px;
+}
+
+nav a {
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
 }
 
 nav li:first-child {
     border-top: solid 1px black;
+}
+
+
+/*--------*/
+/*  中身  */
+/*--------*/
+
+header h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.mainblock {
+    border: solid 1px black;
+    border-radius: 3px;
+    margin: 5px 10px;
+    padding: 10px;
+    background: floralwhite;
+}
+
+.mainblock h2 {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.mainblock ul {
+    margin: 10px 0 0 0;    
 }
