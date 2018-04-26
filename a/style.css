@@ -1,3 +1,22 @@
 body {
     background: darkgray;
+    margin: 0;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+    flex-flow:column nowrap;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px black;
+    background: skyblue;
+}
+
+nav li:first-child {
+    border-top: solid 1px black;
 }
