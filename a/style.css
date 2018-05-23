@@ -4,10 +4,12 @@ body {
 }
 
 /*----------------*/
+
 /*  ナビゲーション  */
+
 /*----------------*/
 
-nav ul{
+nav ul {
     margin: 0;
     padding: 0;
 }
@@ -17,7 +19,7 @@ nav li {
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
-	justify-content: center;
+    justify-content: center;
     border-bottom: solid 1px black;
     background: skyblue;
     height: 40px;
@@ -35,9 +37,15 @@ nav li:first-child {
     border-top: solid 1px black;
 }
 
+.nowpage {
+    background: lightgreen;
+}
+
 
 /*--------*/
+
 /*  中身  */
+
 /*--------*/
 
 header h1 {
@@ -56,14 +64,14 @@ ul {
     padding: 10px;
     background: floralwhite;
 }
-a
-.mainblock h2 {
+
+a .mainblock h2 {
     padding: 0;
     margin: 0 0 10px 0;
 }
 
 .mainblock ul {
-    margin: 10px 0 0 0;    
+    margin: 10px 0 0 0;
 }
 
 /* あ */
@@ -83,13 +91,42 @@ a
     background: floralwhite;
 }
 
-.popchr1 {color: #f00;}
-.popchr2 {color: #f20;}
-.popchr3 {color: #f40;}
-.popchr4 {color: #f60;}
-.popchr5 {color: #f80;}
-.popchr6 {color: #fa0;}
-.popchr7 {color: #fc0;}
-.popchr8 {color: #fe0;}
-.popchr9 {color: #ff0;}
-.popchr10 {color: #ff0;}
+.popchr1 {
+    color: #f00;
+}
+
+.popchr2 {
+    color: #f20;
+}
+
+.popchr3 {
+    color: #f40;
+}
+
+.popchr4 {
+    color: #f60;
+}
+
+.popchr5 {
+    color: #f80;
+}
+
+.popchr6 {
+    color: #fa0;
+}
+
+.popchr7 {
+    color: #fc0;
+}
+
+.popchr8 {
+    color: #fe0;
+}
+
+.popchr9 {
+    color: #ff0;
+}
+
+.popchr10 {
+    color: #ff0;
+}
