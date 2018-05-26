@@ -1,132 +1,74 @@
+@charset "UTF-8";
 body {
-    background: darkgray;
-    margin: 0;
+  background: azure;
+  margin: 0;
 }
-
-/*----------------*/
-
-/*  ナビゲーション  */
-
-/*----------------*/
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid 1px black;
-    background: skyblue;
-    height: 40px;
-}
-
-nav a {
-    display: block;
-    line-height: 40px;
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-}
-
-nav li:first-child {
-    border-top: solid 1px black;
-}
-
-.nowpage {
-    background: lightgreen !important;
-}
-
-
-/*--------*/
-
-/*  中身  */
-
-/*--------*/
 
 header h1 {
-    text-align: center;
-    margin: 5px;
+  text-align: center;
+  margin: 5px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .mainblock {
-    border: solid 1px black;
-    border-radius: 3px;
-    margin: 5px 10px;
-    padding: 10px;
-    background: floralwhite;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 5px 10px;
+  padding: 10px;
+  background: floralwhite;
 }
-
-a .mainblock h2 {
-    padding: 0;
-    margin: 0 0 10px 0;
+.mainblock h2 {
+  padding: 0;
+  margin: 0 0 10px 0;
 }
-
 .mainblock ul {
-    margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
-/* あ */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  background: skyblue;
+  height: 40px;
+}
+nav li:first-child {
+  border-top: 1px solid black;
+}
 
-.oldhomepage {
-    font-family: HGP創英角ﾎﾟｯﾌﾟ体;
-    font-size: 50px;
-    text-align: center;
-    margin: 10px;
+.nowpage {
+  background: lightgreen !important;
 }
 
 .oldhpblock {
-    margin: 5px 10px;
-    padding: 0;
-    border: solid 1px black;
-    border-radius: 3px;
-    background: floralwhite;
+  margin: 5px 10px;
+  padding: 0;
+  border: solid 1px black;
+  border-radius: 3px;
+  background: floralwhite;
+}
+.oldhpblock h2, .oldhpblock p {
+  font-family: HGP創英角ﾎﾟｯﾌﾟ体;
+  text-align: center;
+  background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.oldhpblock h2 {
+  font-size: 50px;
+}
+.oldhpblock p {
+  font-size: 30px;
 }
 
-.popchr1 {
-    color: #f00;
-}
-
-.popchr2 {
-    color: #f20;
-}
-
-.popchr3 {
-    color: #f40;
-}
-
-.popchr4 {
-    color: #f60;
-}
-
-.popchr5 {
-    color: #f80;
-}
-
-.popchr6 {
-    color: #fa0;
-}
-
-.popchr7 {
-    color: #fc0;
-}
-
-.popchr8 {
-    color: #fe0;
-}
-
-.popchr9 {
-    color: #ff0;
-}
-
-.popchr10 {
-    color: #ff0;
-}
+/*# sourceMappingURL=style.css.map */

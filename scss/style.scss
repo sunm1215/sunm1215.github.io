@@ -1,0 +1,84 @@
+body {
+    background: azure;
+    margin: 0;
+}
+
+header {
+    h1 {
+        text-align: center;
+        margin: 5px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.mainblock {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 5px 10px;
+    padding: 10px;
+    background: floralwhite;
+    h2{
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    ul{
+        margin: 10px 0 0 0;
+    }
+}
+
+//ナビゲーション
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        align-items: center;        
+        justify-content: center;
+        border-bottom: 1px solid black;
+        background: skyblue;
+        height: 40px;
+    }
+    li:first-child {
+        border-top: 1px solid black;
+    }
+}
+.nowpage {
+    background: lightgreen !important;
+}
+
+//ださいホームページ
+
+.oldhpblock {
+    margin: 5px 10px;
+    padding: 0;
+    border: solid 1px black;
+    border-radius: 3px;
+    background: floralwhite;
+    h2, p {
+        font-family: HGP創英角ﾎﾟｯﾌﾟ体;
+        text-align: center;
+        background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 30px; 
+    }
+}
+
+//$maxn: 15;
+//@for $i from 1 through $main {
+//    .popchr#{$i} { color:}
+//    }
+
