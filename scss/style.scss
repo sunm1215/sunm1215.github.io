@@ -20,26 +20,32 @@ ul {
     margin: 5px 10px;
     padding: 10px;
     background: floralwhite;
+    
     h2{
         padding: 0;
         margin: 0 0 10px 0;
     }
+    
     ul{
         margin: 0 0 0 0;
     }
+    
     table {
         border-spacing: 0;
         margin: 0;
         padding: 0 0 0 40px;
+        
         th, td {
             border-top: 1px solid black;
             border-left: 1px solid black;
             padding: 2px 5px;
             font-weight: normal;
         }
+        
         td {
             border-right: 1px solid black;
         }
+        
         tr:last-of-type>th, tr:last-of-type>td {
             border-bottom: 1px solid black;
         }
@@ -48,34 +54,102 @@ ul {
 
 //ナビゲーション
 
+//nav {
+//    ul {
+//        margin: 0;
+//        padding: 0;
+//    }
+//    li {
+//        display: flex;
+//        flex-flow: column nowrap;
+//        width: 100%;
+//        align-items: center;        
+//        justify-content: center;
+//        border-bottom: 1px solid black;
+//        background: skyblue;
+//        height: 40px;
+//    }
+//    li:first-child {
+//        border-top: 1px solid black;
+//    }
+//    a {
+//        display: block;
+//        line-height: 40px;
+//        text-decoration: none;
+//        width: 100%;
+//        text-align: center;
+//    }
+//}
+//.nowpage {
+//    background: lightgreen !important;
+//}
+
 nav {
-    ul {
+    border: 1px solid #000;
+    height: 300px;
+    width: 100%;
+    
+    .menu {
+        list-style-type: none;
         margin: 0;
         padding: 0;
+        
+        li{
+            background-color: #9B9;
+            border-bottom: 1px solid  #393;
+            font-size: 13px;
+            line-height: 30px;
+            position: relative;
+            
+            &:first-child{
+                border-top: 1px solid  #393;
+            }
+            
+            label {
+                cursor: pointer;
+                height: 30px;
+                width: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+            
+            .submenu {
+                display: none;
+                list-style-type: none;
+                padding-left: 0;
+                
+                li {
+                    background-color: #EFE;
+                    border-top: 1px solid  #696;
+                    cursor: pointer;
+                    
+                    p {
+                        margin: 0;
+                        padding-left: 25px;
+                    }
+                    
+                    a {
+                        display: block;
+//                        line-height: 40px;
+                        text-decoration: none;
+                        width: 100%;
+                        text-align: center;
+                        transition: background-color linear 0.5s;
+                        
+                        &:hover {
+//                            text-decoration: underline;
+                            background-color: #DDD;
+                        }
+                    }
+                }
+            }
+            
+            input:checked ~ .submenu {
+                display: block;
+            }
+        }
     }
-    li {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 100%;
-        align-items: center;        
-        justify-content: center;
-        border-bottom: 1px solid black;
-        background: skyblue;
-        height: 40px;
-    }
-    li:first-child {
-        border-top: 1px solid black;
-    }
-    a {
-        display: block;
-        line-height: 40px;
-        text-decoration: none;
-        width: 100%;
-        text-align: center;
-    }
-}
-.nowpage {
-    background: lightgreen !important;
 }
 
 //ださいホームページ
@@ -86,6 +160,7 @@ nav {
     border: solid 1px black;
     border-radius: 3px;
     background: floralwhite;
+    
     h2, p {
         font-family: HGP創英角ﾎﾟｯﾌﾟ体;
         text-align: center;
@@ -94,6 +169,7 @@ nav {
         -webkit-text-fill-color: transparent;
         font-size: 50px;
     }
+    
     p {
         font-size: 30px; 
     }

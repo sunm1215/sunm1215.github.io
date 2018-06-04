@@ -13,10 +13,28 @@
     <header>
         <h1>わたしのホームページへようこそ</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li class="nowpage">ホーム</li>
-                <li><a href="pages/page1.html">ページ1</a></li>
-                <li><a href="pages/page2.html">準備中</a></li>
+                <li>
+<!--                    <a href="pages/page1.html">ページ1</a>-->
+                    <label for="menu1"></label>
+                    <input type="checkbox" id="menu1">MENU1
+                    <ul class="submenu">
+                        <li><a href="pages/page1.html">自己紹介</a></li>
+                        <li><a href="#">準備中</a></li>
+                        <li><a href="#">準備中</a></li>
+                    </ul>
+                </li>
+                <li>
+<!--                    <a href="pages/page2.html">準備中</a>-->
+                    <label for="menu2"></label>
+                    <input type="checkbox" id="menu2">MENU2
+                    <ul class="submenu">
+                        <li><a href="pages/page2.html">準備中</a></li>
+                        <li><a href="#">準備中</a></li>
+                        <li><a href="#">準備中</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>

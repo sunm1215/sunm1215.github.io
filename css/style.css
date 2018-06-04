@@ -45,33 +45,60 @@ ul {
   border-bottom: 1px solid black;
 }
 
-nav ul {
+nav {
+  border: 1px solid #000;
+  height: 300px;
+  width: 100%;
+}
+nav .menu {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
-nav li {
-  display: flex;
-  flex-flow: column nowrap;
+nav .menu li {
+  background-color: #9B9;
+  border-bottom: 1px solid  #393;
+  font-size: 13px;
+  line-height: 30px;
+  position: relative;
+}
+nav .menu li:first-child {
+  border-top: 1px solid  #393;
+}
+nav .menu li label {
+  cursor: pointer;
+  height: 30px;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid black;
-  background: skyblue;
-  height: 40px;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
-nav li:first-child {
-  border-top: 1px solid black;
+nav .menu li .submenu {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
 }
-nav a {
+nav .menu li .submenu li {
+  background-color: #EFE;
+  border-top: 1px solid  #696;
+  cursor: pointer;
+}
+nav .menu li .submenu li p {
+  margin: 0;
+  padding-left: 25px;
+}
+nav .menu li .submenu li a {
   display: block;
-  line-height: 40px;
   text-decoration: none;
   width: 100%;
   text-align: center;
+  transition: background-color linear 0.5s;
 }
-
-.nowpage {
-  background: lightgreen !important;
+nav .menu li .submenu li a:hover {
+  background-color: #DDD;
+}
+nav .menu li input:checked ~ .submenu {
+  display: block;
 }
 
 .oldhpblock {
